@@ -30,7 +30,7 @@ class TkFileDialogExample(Tkinter.Frame):
         lstLength = len(self.latList)
         for num in range(0, lstLength):
             self.JSONbuild+="\n\t{\n\t\t\"pointLatitude\":" + self.latList[num] +","
-            self.JSONbuild+="\n\t\t\"pointLatitude\":" + self.longList[num] + "\n\t},"
+            self.JSONbuild+="\n\t\t\"pointLongitude\":" + self.longList[num] + "\n\t},"
 
         self.JSONbuild = self.JSONbuild[:-1]
         self.JSONbuild += "\n]"
